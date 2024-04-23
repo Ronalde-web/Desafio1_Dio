@@ -1,14 +1,5 @@
-// const readline = require('readline').createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   });
-  
-//   readline.question('fala seu Herói? ', (Herói) => {
-//     console.log(`Seu Herói é: ${heroi}`);
-//     readline.close();
-//   });
 let heroi = 'Mec'
-let pontos = 8888
+let pontos = 5785
 
 if (pontos <= 1000) {
     console.log('O Herói de nome: ' + heroi + ', está no nível de ' + 'Ferro')
