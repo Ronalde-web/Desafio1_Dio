@@ -1,40 +1,42 @@
-
-
 let saldo = pontos(10, 5);
 let nivel = "";
-
+let heroi = "";
 
 function pontos(V,F){
     let resultado = V - F
     return resultado
 }
-
-
-
 switch(true){
     case saldo <= 10:
+        heroi = 'Hulk'
         nivel = 'ferro';
     break;
     case saldo >= 10 && saldo <= 20:
+        heroi = 'Super-Man'
         nivel = 'Bronse';
     break;
     case saldo > 20 && saldo <= 50:
+        heroi = 'Batman'
         nivel = 'Prata';
     break;
     case saldo > 50 && saldo <= 80:
+        heroi = 'Flash'
         nivel = 'Ouro';
     break;
     case saldo > 80 && saldo <= 90:
+        heroi = 'Homem de ferro'
         nivel = 'Diamante';
     break;
     case saldo > 80 && saldo <= 100:
+        heroi = 'Lanterna Verde'
         nivel = 'Lendario';
     break;
     case saldo >= 100:
+        heroi = 'Doutor Estranho'
         nivel = 'Imortal'
 }
 
-console.log('O Herói tem de saldo de '+ saldo +' está no nível de ' + nivel)
+console.log('O Herói ' + heroi + ', tem de saldo ' + saldo +', e está no nível de ' + nivel)
 
 
 
